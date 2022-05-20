@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(26, 26, 26);
+}
+
+#top {
+  margin: 1em;
+  font-size: 2em;
+  color: aliceblue;
+  box-sizing: inherit;
+}
+
+#gif-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+img {
+  margin: 0.5em;
+}
+
+#search-box {
+  height: 2.5em;
+}
+
+#search-btn {
+  height: 2.5em;
+  border: none;
+  background-color: grey;
+  color: white;
+}
+#remove-btn {
+  height: 2.5em;
+  background-color: coral;
+  color: white;
+  border: none;
+}
