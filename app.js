@@ -11,6 +11,11 @@ removeBtn.addEventListener("click", () => {
 const searchBox = document.querySelector("#search-box");
 const searchBtn = document.querySelector("#search-btn");
 searchBtn.addEventListener("click", () => searchGif(key, searchBox.value));
+searchBox.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    searchGif(key, searchBox.value);
+  }
+});
 
 async function searchGif(key, query) {
   if (!query) return;
